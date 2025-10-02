@@ -1,8 +1,7 @@
-let input = prompt("Input integer number");
+let input = prompt("Input integer number").trim(); 
+let number = Number(input); 
 
-let number = parseInt(input);
-
-if (isNaN(number)) {
+if (!Number.isInteger(number)) {
     alert("Please enter a valid integer number");
 } else if (number === 0) {
     alert("zero integer number");
