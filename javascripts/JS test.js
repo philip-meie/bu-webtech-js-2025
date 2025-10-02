@@ -1,12 +1,12 @@
-let input = prompt("Input integer number").trim(); 
-let number = Number(input); 
+let input = prompt("Input integer number").trim();
+let number = Number(input);
 
 if (!Number.isInteger(number)) {
-    alert("Please enter a valid integer number");
+    alert(`You entered: ${input}\nPlease enter a valid integer number`);
 } else if (number === 0) {
-    alert("zero integer number");
+    alert(`You entered: ${number}\nzero integer number`);
 } else if (number % 2 === 0) {
-    alert("even integer number");
+    alert(`You entered: ${number}\neven integer number`);
 } else {
-    alert("odd integer number");
+    alert(`You entered: ${number}\nodd integer number`);
 }
